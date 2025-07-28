@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PayPal Button</title>
+  <title>Support Me via PayPal</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .paypal-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
   <script src="https://www.paypal.com/sdk/js?client-id=BAAAiZQSC4NRYmibnRmkGzJcllNg_S3xkyUqv4HrEVfg-Nz9AMxvWPdZXIa8a51KnTAAX0K0v_bd41-gY&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
 </head>
 <body>
+
   <h1>Support Me</h1>
-  <div id="paypal-container-ANFXZV7ZW4ALG"></div>
+  <p>If you'd like to support my work, click the button below 🙏</p>
+
+  <div class="paypal-container">
+    <div id="paypal-container-ANFXZV7ZW4ALG"></div>
+  </div>
+
   <script>
     paypal.HostedButtons({
       hostedButtonId: "ANFXZV7ZW4ALG"
     }).render("#paypal-container-ANFXZV7ZW4ALG");
   </script>
+
 </body>
 </html>

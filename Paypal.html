@@ -2,37 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Support Me via PayPal</title>
+  <title>Dragon City - Package by Day</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
-    }
-    .paypal-container {
-      margin-top: 30px;
+      background: #f4f6f8;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .features {
+      font-size: 14px;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .features li {
+      list-style: none;
+    }
+
+    .total {
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    .paypal-button {
+      margin-top: 10px;
+    }
+
+    .warning {
+      color: #d9534f;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .warning strong {
+      color: red;
     }
   </style>
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAAiZQSC4NRYmibnRmkGzJcllNg_S3xkyUqv4HrEVfg-Nz9AMxvWPdZXIa8a51KnTAAX0K0v_bd41-gY&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAAiZQSC4NRYmibnRmkGzJcllNg_S3xkyUqv4HrEVfg-Nz9AMxvWPdZXIa8a51KnTAAX0K0v_bd41-gY&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 </head>
 <body>
 
-  <h1>Support Me</h1>
-  <p>If you'd like to support my work, click the button below 🙏</p>
+  <div class="container">
+    <h2>Dragon City - Package by Day</h2>
+    <p>Download Dragon City Script <a href="#">here</a></p>
 
-  <div class="paypal-container">
-    <div id="paypal-container-ANFXZV7ZW4ALG"></div>
+    <label>User ID:</label>
+    <input type="text" placeholder="User ID">
+
+    <label>Name:</label>
+    <input type="text" placeholder="Your Name">
+
+    <label>Package:</label>
+    <select>
+      <option>Normal - 15 Day</option>
+      <option>Premium - 30 Day</option>
+      <option>Pro - Lifetime</option>
+    </select>
+
+    <button style="width:100%; padding:10px; background:#28a745; border:none; border-radius:5px; color:white; font-weight:bold;">WATCH VIDEO</button>
+
+    <ul class="features">
+      <li>✔ Battle Arena Mod</li>
+      <li>✔ Quest Mod</li>
+      <li>✔ Recall Dragon</li>
+      <li>✔ Dragon Rescue Mod</li>
+    </ul>
+
+    <div class="total">Total: $4.00</div>
+
+    <label>Email (receive notification):</label>
+    <input type="email" placeholder="Enter your email">
+
+    <div class="paypal-button">
+      <div id="paypal-container-ANFXZV7ZW4ALG"></div>
+    </div>
+
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "ANFXZV7ZW4ALG"
+      }).render("#paypal-container-ANFXZV7ZW4ALG");
+    </script>
+
+    <div class="warning">
+      ⚠ <strong>Please input your UserId carefully.</strong> We depend on it to activate your account.<br>
+      ⚠ Make sure you have a <strong>rooted android device</strong> or emulator to run Dragon City Script.<br><br>
+      If you have any issues, contact: <u>vandtaiinc@gmail.com</u>
+    </div>
   </div>
-
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "ANFXZV7ZW4ALG"
-    }).render("#paypal-container-ANFXZV7ZW4ALG");
-  </script>
 
 </body>
 </html>
